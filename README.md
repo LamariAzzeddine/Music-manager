@@ -3,7 +3,7 @@
 Une application Python complète pour la gestion de fichiers audio (MP3 et FLAC), avec interface en ligne de commande (CLI) **et** interface graphique (GUI).  
 Elle permet l'extraction, la modification de métadonnées, la lecture de fichiers audio, la création de playlists XSPF, et bien plus.
 
-
+<img src="Fimages/1.png" alt="Screenshot" style="display: block; margin: 0 auto; zoom: 50%;" />
 
 ## 📌 Fonctionnalités principales
 
