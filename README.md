@@ -1,7 +1,9 @@
-# 🎵 Music File Manager (MP3 & FLAC) - Python App
+# 🎵 Music File Manager (MP3 & FLAC)
 
 Une application Python complète pour la gestion de fichiers audio (MP3 et FLAC), avec interface en ligne de commande (CLI) **et** interface graphique (GUI).  
 Elle permet l'extraction, la modification de métadonnées, la lecture de fichiers audio, la création de playlists XSPF, et bien plus.
+
+
 
 ## 📌 Fonctionnalités principales
 
@@ -46,8 +48,6 @@ Elle permet l'extraction, la modification de métadonnées, la lecture de fichie
 
 
 ## 🚀 Comment lancer le projet
-
-### 1. Cloner le dépôt GitHub
 
 ```bash
 git clone https://github.com/ton-nom-utilisateur/music-manager.git](https://github.com/LamariAzzeddine/Music-manager.git
