@@ -62,3 +62,6 @@ python main.py
 
 🧑‍💻 Auteur
 Azzeddine Lamari
+Lyna Ines Aourane
+Sara Ibtissem Mokhtari
+ 
