@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module modeCli</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">modeCli</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cadmin%5Cdocuments%5Ccy%20cergy%20paris%5Cpython%5Cprojet%5Caourane-mokhtari-lamari%5Cmodecli.py">c:\users\admin\documents\cy cergy paris\python\projet\aourane-mokhtari-lamari\modecli.py</a></td></tr></table>
+    <p><span class="code">Module&nbsp;de&nbsp;ligne&nbsp;de&nbsp;commande&nbsp;pour&nbsp;gérer&nbsp;l'interface&nbsp;de&nbsp;mode,<br>
+modification&nbsp;des&nbsp;tags&nbsp;audio,&nbsp;génération&nbsp;de&nbsp;playlists&nbsp;et&nbsp;lecture&nbsp;audio.<br>
+&nbsp;<br>
+Ce&nbsp;module&nbsp;permet&nbsp;d'analyser&nbsp;des&nbsp;fichiers&nbsp;MP3&nbsp;et&nbsp;FLAC,&nbsp;d'extraire&nbsp;leurs&nbsp;<br>
+métadonnées,&nbsp;de&nbsp;modifier&nbsp;leurs&nbsp;tags&nbsp;ID3,&nbsp;de&nbsp;créer&nbsp;des&nbsp;playlists&nbsp;au&nbsp;format&nbsp;<br>
+XSPF&nbsp;et&nbsp;de&nbsp;lire&nbsp;les&nbsp;fichiers&nbsp;audio.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+<a href="argparse.html">argparse</a><br>
+</td><td class="multicolumn"><a href="mimetypes.html">mimetypes</a><br>
+<a href="mutagen.html">mutagen</a><br>
+</td><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-create_xspf_playlist"><strong>create_xspf_playlist</strong></a>(playlist_file, audio_files)</dt><dd><span class="code">Crée&nbsp;une&nbsp;playlist&nbsp;XSPF&nbsp;à&nbsp;partir&nbsp;d'une&nbsp;liste&nbsp;de&nbsp;fichiers&nbsp;audio.<br>
+&nbsp;<br>
+@param&nbsp;playlist_file:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;fichier&nbsp;de&nbsp;playlist&nbsp;XSPF&nbsp;à&nbsp;générer.<br>
+@param&nbsp;audio_files:&nbsp;Liste&nbsp;des&nbsp;fichiers&nbsp;audio&nbsp;à&nbsp;ajouter&nbsp;à&nbsp;la&nbsp;playlist.</span></dd></dl>
+ <dl><dt><a name="-explore_folder"><strong>explore_folder</strong></a>(directory)</dt><dd><span class="code">Explore&nbsp;un&nbsp;répertoire&nbsp;et&nbsp;retourne&nbsp;une&nbsp;liste&nbsp;de&nbsp;fichiers&nbsp;audio&nbsp;pris&nbsp;en&nbsp;charge&nbsp;(MP3&nbsp;ou&nbsp;FLAC).<br>
+&nbsp;<br>
+@param&nbsp;directory:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;répertoire&nbsp;à&nbsp;explorer.<br>
+@return:&nbsp;Liste&nbsp;des&nbsp;fichiers&nbsp;audio&nbsp;trouvés&nbsp;dans&nbsp;le&nbsp;répertoire.</span></dd></dl>
+ <dl><dt><a name="-extract_metadata"><strong>extract_metadata</strong></a>(filepath)</dt><dd><span class="code">Extrait&nbsp;et&nbsp;affiche&nbsp;les&nbsp;métadonnées&nbsp;d'un&nbsp;fichier&nbsp;audio&nbsp;(Titre,&nbsp;Artiste,&nbsp;Album,&nbsp;Durée).<br>
+&nbsp;<br>
+@param&nbsp;filepath:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;fichier&nbsp;audio&nbsp;dont&nbsp;les&nbsp;métadonnées&nbsp;sont&nbsp;extraites.</span></dd></dl>
+ <dl><dt><a name="-is_audio_file"><strong>is_audio_file</strong></a>(filepath)</dt><dd><span class="code">Vérifie&nbsp;si&nbsp;un&nbsp;fichier&nbsp;est&nbsp;un&nbsp;fichier&nbsp;audio&nbsp;pris&nbsp;en&nbsp;charge&nbsp;(MP3&nbsp;ou&nbsp;FLAC).<br>
+&nbsp;<br>
+@param&nbsp;filepath:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;fichier&nbsp;à&nbsp;vérifier.<br>
+@return:&nbsp;True&nbsp;si&nbsp;le&nbsp;fichier&nbsp;est&nbsp;un&nbsp;audio&nbsp;MP3&nbsp;ou&nbsp;FLAC,&nbsp;sinon&nbsp;False.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Point&nbsp;d'entrée&nbsp;du&nbsp;programme.&nbsp;Gère&nbsp;les&nbsp;arguments&nbsp;en&nbsp;ligne&nbsp;de&nbsp;commande&nbsp;et&nbsp;appelle&nbsp;les&nbsp;fonctions&nbsp;appropriées.</span></dd></dl>
+ <dl><dt><a name="-modify_tags"><strong>modify_tags</strong></a>(filepath, title=None, artist=None, album=None)</dt><dd><span class="code">Modifie&nbsp;les&nbsp;tags&nbsp;ID3&nbsp;d'un&nbsp;fichier&nbsp;audio&nbsp;(Titre,&nbsp;Artiste,&nbsp;Album).<br>
+&nbsp;<br>
+@param&nbsp;filepath:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;fichier&nbsp;audio&nbsp;dont&nbsp;les&nbsp;tags&nbsp;doivent&nbsp;être&nbsp;modifiés.<br>
+@param&nbsp;title:&nbsp;Le&nbsp;nouveau&nbsp;titre&nbsp;à&nbsp;assigner&nbsp;(ou&nbsp;None&nbsp;pour&nbsp;ne&nbsp;pas&nbsp;modifier).<br>
+@param&nbsp;artist:&nbsp;Le&nbsp;nouvel&nbsp;artiste&nbsp;à&nbsp;assigner&nbsp;(ou&nbsp;None&nbsp;pour&nbsp;ne&nbsp;pas&nbsp;modifier).<br>
+@param&nbsp;album:&nbsp;Le&nbsp;nouvel&nbsp;album&nbsp;à&nbsp;assigner&nbsp;(ou&nbsp;None&nbsp;pour&nbsp;ne&nbsp;pas&nbsp;modifier).</span></dd></dl>
+ <dl><dt><a name="-play_audio"><strong>play_audio</strong></a>(filepath)</dt><dd><span class="code">Lit&nbsp;un&nbsp;fichier&nbsp;audio&nbsp;en&nbsp;utilisant&nbsp;le&nbsp;module&nbsp;Pygame.<br>
+&nbsp;<br>
+@param&nbsp;filepath:&nbsp;Le&nbsp;chemin&nbsp;du&nbsp;fichier&nbsp;audio&nbsp;à&nbsp;lire.</span></dd></dl>
+</td></tr></table>
+</body></html>
